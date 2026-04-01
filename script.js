@@ -1,4 +1,4 @@
-// TYPING ANIMATION
+// TYPING EFFECT
 const text = "I build Discord Bots, Websites & Roblox Systems.";
 let i = 0;
 
@@ -9,9 +9,7 @@ function typing() {
     setTimeout(typing, 50);
   }
 }
-
 typing();
-
 
 // MOBILE MENU
 const menuBtn = document.getElementById("menu-btn");
@@ -20,7 +18,6 @@ const navLinks = document.getElementById("nav-links");
 menuBtn.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
-
 
 // SCROLL REVEAL
 const reveals = document.querySelectorAll(".reveal");
@@ -34,4 +31,13 @@ window.addEventListener("scroll", () => {
       el.classList.add("show");
     }
   });
+});
+
+// PAGE LOADER
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.classList.add("hidden");
+  }, 800);
 });
