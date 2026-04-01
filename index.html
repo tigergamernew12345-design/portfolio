@@ -9,29 +9,37 @@
 
 <body>
 
+<!-- LOADER -->
+<div id="loader">
+  <h1>Vixen</h1>
+</div>
+
 <!-- NAVBAR -->
 <header>
-  <nav>
-    <h2>Vixen</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-    </ul>
-  </nav>
+<nav>
+  <h2>Vixen</h2>
+
+  <div id="menu-btn">☰</div>
+
+  <ul id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+  </ul>
+</nav>
 </header>
 
-<!-- HERO WITH BACKGROUND -->
+<!-- HERO -->
 <section class="hero">
   <div class="hero-content">
     <h1>Hello, I'm Vixen 👋</h1>
-    <p>Discord Bot Developer • Web Creator • Roblox Developer</p>
+    <p id="typing"></p>
     <a href="#projects" class="btn">View Projects</a>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" class="reveal">
   <h2>About Me</h2>
   <p>
     I build Discord bots, websites, and Roblox systems.
@@ -40,7 +48,7 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="reveal">
   <h2>Projects</h2>
 
   <div class="project-card">
@@ -55,18 +63,18 @@
 
   <div class="project-card">
     <h3>Services Website</h3>
-    <p>Custom website built using HTML, CSS and GitHub.</p>
+    <p>Custom website built using HTML, CSS and GitHub Pages.</p>
   </div>
 
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="reveal">
   <h2>Skills</h2>
   <ul>
     <li>HTML & CSS</li>
     <li>JavaScript</li>
-    <li>Discord.py</li>
+    <li>Discord.js</li>
     <li>GitHub Pages</li>
     <li>Roblox Studio</li>
   </ul>
@@ -76,5 +84,6 @@
   <p>© 2026 Vixen</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
   </html>
